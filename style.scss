@@ -1,0 +1,185 @@
+$white: #FDFDFD;
+$red: #C70006;
+$red-alt: #E82127;
+$grey: #353535;
+$grey-alt: #3C3C3C;
+$grey-light: #636363;
+
+@import "scss/abstracts/variables";
+@import "scss/abstracts/mixins";
+
+//@import "scss/global";
+
+*,*:after,*:before { 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+html, body {
+    background-color: #E9E9E9;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+@import "scss/layout/page-loader";
+
+@import "scss/layout/navbar-main";
+@import "scss/layout/sidenav-dots";
+@import "scss/layout/social-icons";
+
+
+//@import "scss/layout/main-section";
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+
+.expand-link {
+    text-transform: uppercase;
+    svg {
+        vertical-align: middle;
+    }
+}
+.section-footer {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .footer-text-container {
+        a {
+            display: inline-block;
+            margin: 0 25px;
+            font-weight: 700;
+            vertical-align: middle;
+            text-transform: uppercase;
+        }
+        .footer-text-big {
+            color: $red-alt;
+            font-size: 26px;
+            letter-spacing: 2.5px;
+        }
+        .footer-text-small {
+            font-size: 14px;
+            color: $grey-alt;
+            letter-spacing: 1.75px;
+        }
+    }
+}
+
+//@import "scss/pages/model-three";
+//@import "scss/pages/solar-roof";
+
+//@import "scss/rwd/main-layout";
+
+
+
+
+main {
+    //display: flex;
+}
+.site-content-cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 4rem;
+ 
+    .car-header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 90%;
+            z-index: 2;
+        }
+    }
+    h1 {
+        position: relative;
+        top: 3rem;
+        text-align: center;
+        margin: 0;
+        z-index: 1;
+        font-size: 7rem;
+        text-transform: uppercase;
+        letter-spacing: .75rem;
+    
+        span {
+            color: #E7E7E7;
+            text-shadow: -1px -1px 0 rgb(139, 139, 139), 1px -1px 0 rgb(139, 139, 139), -1px 1px 0 rgb(139, 139, 139), 1px 1px 0 rgb(139, 139, 139);
+        }
+    }
+}
+@media (max-width: 1360px) { 
+    .site-content-cars {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+}
+@media (max-width: 980px) {
+    .site-content-cars {
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.bottom-text-container {
+
+    text-align: center;
+}
+.specs-overview-container {
+    color: $grey;
+    margin: 25px 0;
+    .spec-wrapper {
+        display: inline-block;
+        margin: 0 25px;
+    }
+    img, h4 {
+        display: inline;
+    }
+    h4 {
+        font-size: 42px;
+        margin: 0 10px;
+        .lowercase {
+            font-size: 28px;
+        }
+    }
+    h6 {
+        margin: 0;
+        color: #636363;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+}
+.reserve-wrapper a {
+    
+    text-transform: uppercase;
+    
+ 
+    color: #ff0000;
+    
+    font-size: 1.75rem;
+    letter-spacing: 0.25rem;
+}

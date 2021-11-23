@@ -1,0 +1,55 @@
+@media (max-width: 480px) {
+    .website-upper-navbar {
+        padding: 10px 50px;
+}
+
+
+
+.subsection-one {
+    background-image: none;
+}
+
+
+
+.hero-image-container {
+    position: absolute;
+    top: 25%;
+
+}
+
+.hero-image-model-three {
+    width: 80%;
+}
+.hero-image-text {
+    font-size: 7.5vw;
+    top: 0;
+    letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#vertical-nav {
+        display: none;
+    }
+    .model-three-section .hero-image-container .red-underlay {
+        visibility: hidden;
+    }
+    .website-upper-navbar .links-wrapper {
+        display: none;
+    }
+  
+  .social-icons-hub {
+    display: none;
+}
+
+
+}

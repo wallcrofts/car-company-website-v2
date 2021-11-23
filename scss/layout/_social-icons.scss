@@ -1,0 +1,21 @@
+.social-icons-hub {
+    position: fixed;
+    z-index: 99;
+    bottom: 90px;
+    right: 90px;
+    ul {
+        list-style: none;
+        li {
+            font-size: 20px;
+            margin: 20px 0;
+            text-align: center;
+            a {
+                color: $grey-light;
+                opacity: 0.5;
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
